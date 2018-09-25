@@ -7,8 +7,6 @@ module.exports = function(app) {
     .get(bus.getBusList)
     .post(bus.createBus);
 
-console.log(bus);
-console.log(bus.getBus);
     app.route('/bus/:busId')
       .get(bus.getBus)
       .put(bus.updateBus)
