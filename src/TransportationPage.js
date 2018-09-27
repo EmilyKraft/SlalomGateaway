@@ -22,12 +22,13 @@ componentDidMount() {
       departure times and different ride styles (party, low-key, mixed). Please
       see the list below to see which buses are currently available, and be sure
       to register for your preferred bus!</p>
-      <table><th>Departure Time</th><th>Ride Type</th><th>Description</th>
+      <table><th>Departure Time</th><th>Ride Type</th><th>Description</th><th>Register</th>
       <tbody>
       {this.state.buses.map(bus => (
 					<tr key={bus._id}><td>{bus.departureTime}</td>
           <td>{bus.rideType}</td>
           <td>{bus.description}</td>
+          <td><NavLink to="/transportation/busRegistration">Sign up</NavLink></td>
           </tr>
 				))}
         </tbody>

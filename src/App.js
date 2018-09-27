@@ -20,7 +20,7 @@ class App extends Component {
       <HashRouter>
       <div className="App">
         <header className="App-header">
-        <img src="http://www.winewomenandshoes.com/wp-content/uploads/2016/10/slalom-logo-blue-SPOT-7460C.jpg" width="10%"/>
+        <img src="http://www.winewomenandshoes.com/wp-content/uploads/2016/10/slalom-logo-blue-SPOT-7460C.jpg" width="10%" alt="slalom logo"/>
           <h1 className="App-title">Gateaway 2019</h1>
         </header>
         <ul className="header">

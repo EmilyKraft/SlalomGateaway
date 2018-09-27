@@ -13,7 +13,9 @@ exports.getBusList = function(req, res) {
 
 
 exports.createBus = function(req, res) {
-  var newBus = new Bus(req.body);
+  console.log("I am here");
+  var newBus = new Bus({ req.body });
+  console.log(newBus);
   newBus.save(function(err, bus) {
     if (err)
       res.send(err);
